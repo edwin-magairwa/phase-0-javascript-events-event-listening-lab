@@ -6,6 +6,8 @@ describe("index.js", () => {
   let input;
 
   beforeEach(function() {
+    // Set up the HTML structure for the test
+    document.body.innerHTML = '<button id="button">Click me</button>';
     input = document.getElementById('button');
     sinon.spy(input, 'addEventListener');
   })
